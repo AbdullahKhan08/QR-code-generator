@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="main-div">
+        <h1>QR Code Generator</h1>
+        <form id="qrCodeForm">
+          <label for="text">Enter Text:</label>
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="Enter text for QR code"
+          />
+          <button type="submit">Generate QR Code</button>
+          <button type="reset" id="resetBtn">Reset</button>
+        </form>
+
+        <div id="qrCodeContainer"></div>
+        <div id="dynamic-buttons"></div>
+
+        <div id="message">
+          <div
+            id="error-message"
+            style="display: none"
+            class="text-center"
+          ></div>
+          <div
+            id="success-message"
+            style="display: none"
+            class="text-center"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

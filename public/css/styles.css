@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background: rgb(229, 229, 229);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type='text'] {
+  width: 300px;
+  padding: 5px;
+  outline: none;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+button {
+  display: block;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+button:hover {
+  background: #cdcaca;
+}
+
+#qrCodeContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+  margin: auto;
+  background-color: rgb(229, 229, 229);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 1rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.25rem;
+}
+.success-message {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: green;
+}
+
+.copyBtn {
+  margin-top: 1rem;
+}
+
+.downloadBtn {
+  margin-top: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#dynamic-buttons {
+  display: flex;
+}
