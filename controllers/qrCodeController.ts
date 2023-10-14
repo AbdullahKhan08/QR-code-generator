@@ -1,8 +1,6 @@
-const qrcode = require('qrcode')
+import qrcode from 'qrcode'
 
-const QRCode = require('../models/qrCodeModel')
-
-exports.generateQRCode = async (req, res) => {
+export const generateQRCode = async (req: any, res: any) => {
   try {
     const text = req.body.text
 

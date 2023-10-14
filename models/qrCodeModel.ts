@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 
 const qrCodeSchema = new mongoose.Schema({
   text: {
@@ -17,6 +17,4 @@ const qrCodeSchema = new mongoose.Schema({
 
 // schema into model
 
-const QRCode = mongoose.model('QRCode', qrCodeSchema)
-
-module.exports = QRCode
+export const QRCode = mongoose.model('QRCode', qrCodeSchema)

@@ -1,10 +1,9 @@
-const express = require('express')
-
+import express from 'express'
 const app = express()
-const path = require('path')
-const qrCodeRoutes = require('./routes/qrCode')
-const connectDB = require('./db/connect')
-const notFound = require('./middleware/not-found')
+import path from 'path'
+import qrCodeRoutes from './routes/qrCode'
+import { connectDB } from './db/connect'
+import { notFound } from './middleware/not-found'
 require('dotenv').config()
 
 const PORT = process.env.PORT || 3000
